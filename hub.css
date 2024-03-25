@@ -45,7 +45,6 @@
 
 /* Animations */
 @keyframes LandingPage {
-    
 }
 /*-----*/
 
@@ -235,7 +234,7 @@ body{
 
         font-size: 1.5rem;
     
-        background: linear-gradient(180deg, rgba(0,0,17,0.6) 0%, rgba(21,25,34,0.8) 100%);
+        background: linear-gradient(180deg, rgba(47,53,65,0) 0%, rgba(47,53,65,0.3) 40%, rgba(47,53,65,0.75) 100%);
 
         li{
             display: inline;
@@ -266,7 +265,7 @@ body{
         font-style: normal;
         font-size: 1.25rem;
 
-        background: rgba(21, 25, 34, 0.8);
+        background: rgba(47,53,65,0.75);
         color: var(--nord4);
 
         a{
