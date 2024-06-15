@@ -604,3 +604,22 @@ body{
 
 }
 /*-----*/
+
+
+/* Mobile Formatting */
+@media only screen and (max-width: 37.5rem){
+    .navbar{
+        font-size: 1.25rem;
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+
+
+    .footer{
+        font-size: 1.5rem;
+    }
+    
+}
+/*-----*/
