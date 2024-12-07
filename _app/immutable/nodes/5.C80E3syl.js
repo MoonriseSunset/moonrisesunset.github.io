@@ -1,0 +1,1 @@
+import{a as t,t as r}from"../chunks/disclose-version.ZACzQZAJ.js";import"../chunks/legacy.CVUywwzW.js";import{n as p}from"../chunks/runtime.7GzHGAnu.js";var d=r('<div class="header"><h1>About</h1></div> <div class="markdown"><div class="block"><p>WIP</p></div></div>',1);function s(a){var o=d();p(2),t(a,o)}export{s as component};
