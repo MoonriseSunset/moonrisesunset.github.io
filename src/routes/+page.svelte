@@ -1,6 +1,4 @@
 <script>
-    import {base} from '$app/paths';
-
 </script>
 
 <head>
@@ -16,10 +14,10 @@
             
         </div>
         <div class="homenavbar">
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Misc</a></li>
-                <li><a href="">Changelog</a></li>
+                <li><a href="/pages/about">About</a></li>
+                <li><a href=" ">Projects</a></li>
+                <li><a href=" ">Misc</a></li>
+                <li><a href="/pages/changelog">Changelog</a></li>
         </div>
         <div class="homefooter">
             <a href="https://github.com/MoonriseSunset" target="_blank">Github</a> | © MoonriseSunset 2024 

@@ -1,7 +1,5 @@
-<script lang="ts">
+<script>
+    import { base } from '$app/paths';
     let {children} = $props();
-
-    import '../global.css'
 </script>
-
 {@render children()}
