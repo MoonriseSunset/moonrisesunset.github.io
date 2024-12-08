@@ -1,1 +1,0 @@
-import{a as r,t as e}from"../chunks/disclose-version.ZACzQZAJ.js";import"../chunks/legacy.CVUywwzW.js";import"../entry/start.CLXfjcl2.js";import"../chunks/paths.C4j1bi2r.js";var a=e(`<body class="svelte-o4x3ij"><h1>Uh oh, this page doesn't exist.</h1></body>`);function n(o){var t=a();r(o,t)}export{n as component};
