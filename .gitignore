@@ -22,4 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Code Workspace
 moonrisesunset.github.io.code-workspace
