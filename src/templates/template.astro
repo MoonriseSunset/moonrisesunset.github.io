@@ -1,7 +1,13 @@
 ---
-const pageTitle = "Template";
+
+//Imports
 import '../styles/global.css';
 
+import Footer from '../layouts/Footer.astro';
+import Navbar from '../layouts/Navbar.astro';
+
+//Configurables
+const pageTitle = "Template";
 ---
 
 <html lang="en">
@@ -19,9 +25,12 @@ import '../styles/global.css';
 
 		<!-- Astro Setup -->
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+		<title>M/S - {pageTitle}</title>
 
 	</head>
+
+	<Navbar path={pageTitle}/>
+
 	<body>
 		<div class="block">
 			<h1>{pageTitle}</h1>

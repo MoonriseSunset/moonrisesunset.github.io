@@ -63,10 +63,12 @@ html{
 }
 
 .block{
-    background-color: var(--nord0);
     padding: 1.25rem;
     margin-top: 1.25rem;
     overflow: auto;
+
+    background: rgb(46,52,64);
+    background: linear-gradient(90deg, rgba(46,52,64,1) 0%, rgba(0,0,0,0.7) 100%);
 
     box-sizing: border-box;
     border: 0.125rem solid var(--nord3);
@@ -77,9 +79,8 @@ html{
         font-synthesis: none;
         font-size: 2rem;
 
-        font-family: "Sometype Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 600;
+        font-family: "Oxygen", sans-serif;
+        font-weight: 700;
         font-style: normal;
 
         margin-top: 0.3125rem;
@@ -141,6 +142,16 @@ html{
         font-size: 1.125rem;
         line-height: 2rem;
         list-style-type: circle;
+    }
+
+    a{
+        color: var(--nord13);
+        text-decoration: none;
+    }
+
+    #futurelink{
+        color: var(--nord15);
+        text-decoration:line-through;
     }
 }
 
