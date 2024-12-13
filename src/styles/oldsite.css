@@ -1,0 +1,654 @@
+/* Imports */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Noto+Sans+Display:ital,wght@0,500;1,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*-----*/
+
+/* Variables */
+:root{
+    /* Nord Base Palette */
+    --nord0: #2f3541;
+    --nord1: #3B4252;
+    --nord2: #434C5E;
+    --nord3: #4C566A;
+
+    --nord4: #D8DEE9;
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
+
+    --nord7: #8FBCBB;
+    --nord8: #88C0D0;
+    --nord9: #81A1C1;
+    --nord10: #5E81AC;
+
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
+    /*-----*/
+
+    /* Custom Colors */
+    --pureblack: #000000;
+    --abyss: #000011;
+    --malachite: #001100;
+    --basalt: #111111;
+
+    --burntorange: #972e0e;
+
+    --ash: #222222;
+    --twilight: #110033;
+
+}
+/*-----*/
+
+/* Animations */
+@keyframes LandingPage {
+}
+/*-----*/
+
+/* Fonts */
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*.open-sans-<uniquifier> {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }*/
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 400 to 700
+
+.sometype-mono-<uniquifier> {
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+
+
+.oxygen-light {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.oxygen-regular {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.oxygen-bold {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+
+.noto-sans-display-<uniquifier> {
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}*/
+  
+
+/*-----*/
+
+/* Site-wide Formatting */
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    background-color:var(--nord0);
+}
+
+.navbar{
+    overflow: hidden;
+    border-radius: 0.3125rem;
+
+    font-size: 1.2rem;
+    height: 3.425rem;
+
+    font-family: "Noto Sans Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    background: var(--nord2);
+
+    a{
+        display: block;
+        float: left;
+        padding: 0.875rem 2rem;
+        transition: background-color .5s;
+
+        background: linear-gradient(90deg, rgba(67,76,94,1) 0%, rgba(67,76,94,1) 5%, rgba(67,76,94,0.5) 50%, rgba(67,76,94,1) 95%, rgba(67,76,94,1) 100%);
+
+        color: var(--nord6);
+
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a:hover:not(#currentpage){
+        background-color: var(--burntorange);
+    }
+}
+
+#currentpage{
+    background: linear-gradient(90deg, rgba(67,76,94,1) 0%, rgba(50,71,108,1) 5%, rgba(27,64,128,1) 50%, rgba(49,71,109,1) 95%, rgba(67,76,94,1) 100%);
+}
+
+.footer{
+    padding: 1.25rem;
+    background: linear-gradient(90deg, rgba(47,53,65,0.4) 0%, rgba(129,161,193,0.4) 50%, rgba(47,53,65,0.4) 100%);;
+
+    text-align: center;
+    align-self: center;
+    color: var(--nord4);
+
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    max-width: 100%;
+    margin-top: 0.625rem;
+    box-sizing: border-box;
+    border: 0.125rem solid var(--nord8);
+    border-radius: 0.625rem;
+    font-size: 1rem;
+
+    a{
+        text-decoration: none;
+        color: var(--nord12)
+    }
+}
+
+/*-----*/
+
+/* Page Specific Formatting */
+
+/* Landing Page */
+.landing{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    background: linear-gradient(45deg, rgba(0,0,17,1) 0%, rgba(17,0,51,1) 33%, rgba(34,34,34,1) 66%, rgba(0,0,0,1) 100%);
+
+    .title{  
+        margin: 0;
+        height: 75%;
+
+        
+
+        font-family: "Oxygen", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2rem;
+
+        h1{
+            position: relative;
+            top:50%;
+            width: 100%;
+            text-align: center;
+            margin:0;
+
+            color: var(--nord6);
+        }
+
+        h2{
+            position: relative;
+            top:50%;
+            width: 100%;
+            text-align: center;
+            margin:0;
+
+            font-family: "Oxygen", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            color: var(--nord4);
+        }
+    }
+
+    .homenavbar{
+        width: 100%;
+        height: 10%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+
+        text-align: center;
+
+        font-family: "Sometype Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+
+        font-size: 1.5rem;
+    
+        background: linear-gradient(180deg, rgba(47,53,65,0) 0%, rgba(47,53,65,0.3) 40%, rgba(47,53,65,0.75) 100%);
+
+        li{
+            display: inline;
+            width: 25%;
+        }
+
+        a{
+            display: inline-block;
+            padding: 0.525rem;
+
+            text-decoration: none;
+
+            color: var(--nord4);
+
+        }
+
+    }
+
+    .homefooter{
+        width: 100%;
+        height: 15%;
+        padding-top: 5%;
+
+        text-align: center;
+
+        font-family: "Oxygen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25rem;
+
+        background: rgba(47,53,65,0.75);
+        color: var(--nord4);
+
+        a{
+            text-decoration: none;
+
+            color:var(--nord6);
+        }
+    }
+}
+/*-----*/
+
+/* About */
+.about{
+    width: 100%;
+    font-size: 100%;
+    background: linear-gradient(0deg, rgba(47,53,65,1) 0%, rgba(3,39,55,1) 100%);
+    padding-left: 1%;
+    padding-right: 1%;
+
+    hr{
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    
+        border: 0.125rem solid var(--nord0);
+        border-radius: 0.1875rem;
+    }
+
+    .header{
+        margin-top: 0.625rem;
+        
+        background: linear-gradient(15deg, rgba(39,79,119,1) 0%, rgba(59,78,82,1) 33%, rgba(48,47,69,1) 66%, rgba(94,129,172,1) 100%);
+        color: var(--nord4);
+        border-radius: 0.3125rem;
+    
+        text-align: center;
+        padding: 1.875rem;
+
+        h1{
+            font-family: "Oxygen", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+
+            font-size: 3.125rem;
+            font-synthesis: none;
+
+            color:var(--nord6);
+        }
+    }
+
+    .block{
+        background-color: rgba(0, 17, 17, 0.4);
+        padding: 1.25rem;
+        margin-top: 1.25rem;
+        overflow: auto;
+    
+        box-sizing: border-box;
+        border: 0.125rem solid var(--nord0);
+        border-radius: 0.625rem;
+
+        h1{
+            color: var(--nord6);
+            font-synthesis: none;
+            font-size: 2rem;
+
+            font-family: "Sometype Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+
+            margin-top: 0.3125rem;
+            display: inline-block;
+            margin-right: auto;
+
+            border-bottom: solid var(--nord10);
+        }
+
+        h2{
+            color: var(--nord5);
+            font-size: 1.75rem;
+            font-synthesis: none;
+
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+
+            margin-top: 0;
+        }
+
+        h3{
+            color: var(--nord14);
+            font-size: 1.5rem;
+            font-synthesis: none;
+
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+
+            margin-top: 0;
+        }
+
+        p{
+            font-family: "Lato", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 1rem;
+
+            color:var(--nord5);
+        }
+
+        ul, ol{
+            color: var(--nord6);
+
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+
+            font-size: 1.125rem;
+            line-height: 2rem;
+            list-style-type: circle;
+        }
+    }
+
+}
+/*-----*/
+
+/* Changelog */
+.changelog{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    background: var(--ash);
+    background: linear-gradient(0deg, rgba(47,53,65,1) 0%, rgba(45,69,51,1) 100%);
+    padding-left: 1%;
+    padding-right: 1%;
+
+    hr{
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    
+        border: 0.125rem solid var(--nord0);
+        border-radius: 0.1875rem;
+    }
+
+    .header{
+        margin-top: 0.625rem;
+        
+        background: linear-gradient(142deg, rgba(47,53,65,1) 0%, rgba(32,38,52,1) 33%, rgba(29,50,60,1) 66%, rgba(19,22,80,1) 100%);
+        color: var(--nord4);
+        border-radius: 0.3125rem;
+    
+        text-align: center;
+        padding: 1.875rem;
+
+        h1{
+            font-family: "Oxygen", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+
+            font-size: 3.125rem;
+            font-synthesis: none;
+
+            color:var(--nord6);
+        }
+    }
+
+    .block{
+        background-color: rgba(0, 0, 17, 0.4);
+        padding: 1.25rem;
+        margin-top: 1.25rem;
+        overflow: auto;
+    
+        box-sizing: border-box;
+        border: 0.125rem solid var(--nord0);
+        border-radius: 0.625rem;
+
+        h1{
+            color: var(--nord6);
+            font-synthesis: none;
+            font-size: 2rem;
+
+            font-family: "Sometype Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+
+            margin-top: 0.3125rem;
+            display: inline-block;
+            margin-right: auto;
+
+            border-bottom: solid var(--nord10);
+        }
+
+        h2{
+            color: var(--nord5);
+            font-size: 1.75rem;
+            font-synthesis: none;
+
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+
+            margin-top: 0;
+        }
+
+        h3{
+            color: var(--nord14);
+            font-size: 1.5rem;
+            font-synthesis: none;
+
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+
+            margin-top: 0;
+        }
+
+        ul, ol{
+            color: var(--nord6);
+
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+
+            font-size: 1.125rem;
+            line-height: 2rem;
+            list-style-type: circle;
+        }
+    }
+
+}
+/*-----*/
+
+/* Projects */
+.projects{
+
+}
+/*-----*/
+
+
+/* Mobile Formatting */
+@media only screen and (max-width: 37.5rem){
+    .navbar{
+        font-size: 1.25rem;
+
+        a{
+            padding: 0.875rem 0.6rem;
+        }
+    }
+
+    .footer{
+        font-size: 1.5rem;
+    }
+
+    .landing{
+        background: var(--nord0);
+
+        .title{
+
+            height: 60%;
+
+            h2{
+                font-size: 2rem;
+            }
+        }
+
+        .homenavbar{
+
+            height: 25%;
+
+            font-size: 1.25rem;
+            overflow: wrap;
+
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            li{
+                width: 35%;
+            }
+        }
+    }
+    
+}
+/*-----*/

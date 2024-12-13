@@ -1,0 +1,43 @@
+---
+
+---
+<style>
+    .footer{
+        padding: 1.25rem;
+        background-color: var(--twilight);
+
+        text-align: center;
+        align-self: center;
+        color: var(--nord4);
+
+        font-family: "Sometype Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+
+        max-width: 100%;
+        margin-top: 0.625rem;
+        box-sizing: border-box;
+        border: 0.125rem solid var(--nord10);
+        border-radius: 0.625rem;
+        font-size: 1rem;
+
+        a{
+            color: var(--nord13);
+        }
+    }  
+    @media only screen and (max-width: 37.5rem){
+        .footer{
+            font-size: 1.5rem;
+        }
+    }
+
+</style>
+
+
+<html lang="en">
+    <slot />
+    <div class="footer">
+        <a href="https://github.com/MoonriseSunset" target="_blank">Github</a> | © MoonriseSunset 2024 
+    </div>
+</html>

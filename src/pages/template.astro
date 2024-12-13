@@ -1,12 +1,11 @@
 ---
-const pageTitle = "Home";
+const pageTitle = "Template";
 import '../styles/global.css';
-import Footer from '../layouts/Footer.astro';
 
 ---
 
 <html lang="en">
-    <head>
+	<head>
 		<!-- General HTML Setup -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -23,11 +22,9 @@ import Footer from '../layouts/Footer.astro';
 		<title>{pageTitle}</title>
 
 	</head>
-    <div class="block">
-        <h1>Hello!</h1>
-        <h2>Welcome to my website</h2>
-        <p>Very WIP</p>
-    </div>
-	
-	<Footer />
+	<body>
+		<div class="block">
+			<h1>{pageTitle}</h1>
+		</div>
+	</body>
 </html>
