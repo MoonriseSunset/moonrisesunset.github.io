@@ -46,7 +46,7 @@ html{
     /* Open Sans Default Font */
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
@@ -87,7 +87,7 @@ html{
         display: inline-block;
         margin-right: auto;
 
-        border-bottom: solid var(--nord10);
+        border-bottom: solid var(--nord12);
     }
 
     h2{
