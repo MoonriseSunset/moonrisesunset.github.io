@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: School Projects - Overview
 description: School Project Base
 ---
 
