@@ -3,9 +3,7 @@ title: Home
 description: Start Here!
 ---
 
-
-
-# Hi!
+## Hi!
 
 Welcome to my project documentation site. This is where I'll store all the projects I've worked on and/or contributed to.
 

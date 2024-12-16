@@ -3,7 +3,6 @@ import { defineConfig } from 'astro/config';
 
 import starlight from '@astrojs/starlight';
 
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://moonrisesunset.github.io',
@@ -12,14 +11,16 @@ export default defineConfig({
       title: 'Projects',
 			customCss:[
 				'./src/styles/starlight.css',
-				'@fontsource-variable/inter'
+				'@fontsource-variable/inter',
+				'@fontsource-variable/sometype-mono',
+				'@fontsource-variable/noto-sans',
 				
 			],
 			social: {
 				github: 'https://github.com/MoonriseSunset',
 			},
 			favicon: './src/assets/starlightfavicon.png',
-      logo: {src:'./src/assets/Logo.png',},
+      		logo: {src:'./src/assets/Logo.png',},
 			sidebar: [
 				{
 					label: 'Start Here',
