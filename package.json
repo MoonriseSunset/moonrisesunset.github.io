@@ -14,5 +14,8 @@
     "@fontsource-variable/noto-sans": "^5.1.0",
     "@fontsource-variable/sometype-mono": "^5.1.0",
     "astro": "^5.0.5"
+  },
+  "devDependencies": {
+    "less": "^4.2.1"
   }
 }

@@ -77,21 +77,33 @@
 	--sl-color-black: var(--ash);
 
 	--sl-font: 'Inter', sans-serif;
+
+	em{
+		color: var(--nord14);
+
+		strong{
+			color: var(--nord15);
+		}
+	}
+
+	strong{
+		color: var(--nord11);
+	}
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
 	--sl-color-accent-low: var(--abyss);
-	--sl-color-accent: var(--nord7);
-	--sl-color-accent-high: var(--nord12);
-	--sl-color-white: var(--nord6);
+	--sl-color-accent: var(--nord10);
+	--sl-color-accent-high: var(--nord10);
+	--sl-color-white: var(--nord1);
 	--sl-color-gray-1: var(--nord13);
-	--sl-color-gray-2: var(--nord5);
-	--sl-color-gray-3: var(--nord13);
+	--sl-color-gray-2: var(--nord0);
+	--sl-color-gray-3: var(--abyss);
 	--sl-color-gray-4: var(--nord14);
-	--sl-color-gray-5: var(--nord13);
-	--sl-color-gray-6: var(--nord0);
-	--sl-color-gray-7: var(--ash);
-	--sl-color-black: var(--nord3);
+	--sl-color-gray-5: var(--burntorange);
+	--sl-color-gray-6: var(--nord6);
+	--sl-color-gray-7: var(--nord0);
+	--sl-color-black: white;
 }
 
 h1{

@@ -7,6 +7,9 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   site: 'https://moonrisesunset.github.io',
   integrations: [
+
+
+	
     starlight({
       title: 'Projects',
 			customCss:[

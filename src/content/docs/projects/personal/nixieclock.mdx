@@ -1,0 +1,38 @@
+---
+title: Nixie Clock
+description: Arduino Controlled Nixie Clock (WIP)
+sidebar:
+    badge:
+        text: Beta
+        variant: success
+---
+import { Icon } from '@astrojs/starlight/components';
+
+I've been working on a nixie clock off and on over the years, here's the breakdown:
+
+## 1st Iteration:
+
+This is the current iteration until I get to designing the 2nd. The whole thing is assembled on a large protoboard, with major chips soldered in place. Connections were made through wire-wrapping (which would also make it somewhat fragile).
+
+### Parts Overview:
+
+- **Primary Microcontroller**: <a target="_base" href="https://store-usa.arduino.cc/products/arduino-nano-every">Arduino Nano Every</a>
+- Arduino -> Serial Chips (3 total): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV8153N?qs=UG%2F8xqv%2F6WfEPwrU8la10g%3D%3D">SN74LV8153N</a>
+- Serial -> BCD Chips (1 per tube): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/CD4028BE?qs=q81XD9WTF%252BJVO5EmC%252BxsYA%3D%3D">CD4028BE</a>
+- BCD -> Nixie High-Power Transistors (1 per nixie pin): <a target="_base" href="https://www.mouser.com/ProductDetail/Diotec-Semiconductor/MPSA42?qs=OlC7AqGiEDnrqj4YbvE3lA%3D%3D">MPSA42</a>
+- External RTC Module: <a target="_base" href="https://docs.macetech.com/doku.php/chronodot_v2.0">ChronoDot</a>
+
+---
+
+## 2nd Iteration (Planned):
+
+#### Objectives:
+
+- Get assembly made into a PCB
+- Condense design to use less components
+
+### Parts Overview:
+
+- **Primary Microcontroller**: <a target="_base" href="https://docs.particle.io/reference/datasheets/wi-fi/photon-datasheet/">Particle Photon (not photon 2)</a>
+- MCU -> Serial Chips (3 total): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV8153N?qs=UG%2F8xqv%2F6WfEPwrU8la10g%3D%3D">SN74LV8153N</a>
+- Serial -> **Nixie** (1 per tube): <a target="_base" href="https://neon1.net/nixieclock/sn74141.pdf">Soviet 74141</a>
