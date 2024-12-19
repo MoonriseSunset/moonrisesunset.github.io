@@ -2,8 +2,7 @@
 title: Home
 description: Start Here!
 ---
-import { Badge } from '@astrojs/starlight/components';
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Badge, Tabs, TabItem, LinkCard, CardGrid } from '@astrojs/starlight/components';
 
 ## Hi!
 
@@ -22,3 +21,8 @@ Needless to say, this site is **Extremely WIP**. I've implemented a badge system
 </Tabs>
 
 ---
+
+<CardGrid>
+  <LinkCard title="Personal Projects" href="/projects/personal/1-personalprojects/" description="jump to the personal project section"/> 
+  <LinkCard title="School Projects" href="/projects/personal/1-personalprojects/" description="jump to the school project section"/>
+</CardGrid>
