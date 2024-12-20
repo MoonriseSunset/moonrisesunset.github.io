@@ -18,7 +18,7 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/MoonriseSunset',
 			},
-			favicon: './src/assets/starlightfavicon.png',
+			favicon: './assets/starlightfavicon.png',
       		logo: {src:'./src/assets/Logo.png',},
 			sidebar: [
 				{
