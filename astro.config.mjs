@@ -24,13 +24,16 @@ export default defineConfig({
 				{
 					label: 'Start Here',
 					items:[
-						{label: 'Home',link: '/'}
+						{label: 'Landing Page',link: '/'},
+						{label: 'About',link: '/about/'},
+						{label: 'Projects',link: '/project-overview/'},
+						{label: 'Changelog',link: '/changelog/'},
 					
 					],
 					collapsed: false,
 				},
         {
-					label: 'Personal',
+					label: 'Personal Projects',
 					autogenerate: {directory: '/personal'},
 					collapsed: false,
 				},
