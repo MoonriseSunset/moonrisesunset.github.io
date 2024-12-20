@@ -1,0 +1,39 @@
+---
+title: Changelog
+description: Start Here! Welcome to my project documentation site.
+template: 'splash'
+banner: 
+  content: |
+        Heyo! This site is very WIP!
+hero:
+  title: "Moonrise's Projects"
+  tagline: "Welcome"
+  image:
+    alt: "Logo"
+    dark: ../starlight-assets/SplashDark.png
+    light: ../starlight-assets/SplashLight.png
+---
+import { Badge, Tabs, TabItem, LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+## Hi!
+
+Welcome to my project documentation site. This is where I'll store all the projects I've worked on and/or contributed to.
+
+If you want to see a more general about me, check out my [main site](../).
+
+Needless to say, this site is **Extremely WIP**. I've implemented a badge system to indicate the "readiness" of different pages:
+
+<Tabs>
+    <TabItem label="Complete"><Badge text="Complete" variant="note" /> Entries with this tag are generally complete, any edits to them will either be minor updates or more stylistic things.</TabItem>
+    <TabItem label="Ongoing"><Badge text="Ongoing" variant="tip" />Similar to the Complete tags, these entries are generally complete descriptions, just for an ongoing project.</TabItem>
+    <TabItem label="Beta"><Badge text="Beta" variant="success" />Entries with a Beta tag are generally WIP, with some content filled out.</TabItem>
+    <TabItem label="Alpha"><Badge text="Alpha" variant="caution" />Entries with this tag are just bare bones, one step above no content at all.</TabItem>
+    <TabItem label="Empty"><Badge text="Empty" variant="danger" />Empty pages which will be worked on later on.</TabItem>
+</Tabs>
+
+---
+
+<CardGrid>
+  <LinkCard title="Personal Projects" href="/personal/1-personalprojects/" description="jump to the personal project section"/> 
+  <LinkCard title="School Projects" href="/school-projects/1-schoolprojects/" description="jump to the school project section"/>
+</CardGrid>

@@ -6,18 +6,14 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://moonrisesunset.github.io',
-  integrations: [
-
-
-	
+  integrations: [	
     starlight({
-      title: 'Projects',
+      title: "Moonrise's Site",
 			customCss:[
 				'./src/styles/starlight.css',
 				'@fontsource-variable/inter',
 				'@fontsource-variable/sometype-mono',
 				'@fontsource-variable/noto-sans',
-				
 			],
 			social: {
 				github: 'https://github.com/MoonriseSunset',
@@ -27,17 +23,20 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Start Here',
-					items:[{label: 'Home',link: '/projects'}],
+					items:[
+						{label: 'Home',link: '/'}
+					
+					],
 					collapsed: false,
 				},
         {
 					label: 'Personal',
-					autogenerate: {directory: 'projects/personal'},
+					autogenerate: {directory: '/personal'},
 					collapsed: false,
 				},
 				{
 					label: 'School Projects',
-					autogenerate: {directory: 'projects/school-projects'},
+					autogenerate: {directory: '/school-projects'},
 					collapsed: false,
 				},
 			],
