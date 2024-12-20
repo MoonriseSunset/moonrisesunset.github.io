@@ -6,10 +6,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://moonrisesunset.github.io',
-  integrations: [
-
-
-	
+  integrations: [	
     starlight({
       title: 'Projects',
 			customCss:[
@@ -17,7 +14,6 @@ export default defineConfig({
 				'@fontsource-variable/inter',
 				'@fontsource-variable/sometype-mono',
 				'@fontsource-variable/noto-sans',
-				
 			],
 			social: {
 				github: 'https://github.com/MoonriseSunset',
