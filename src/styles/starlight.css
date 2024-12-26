@@ -32,37 +32,7 @@
     --ash: #222222;
     --twilight: #110033;
 
-	/* Reference */
-
-	--refsl-color-accent-low: #00263f;
-	--refsl-color-accent: #0070ac;
-	--refsl-color-accent-high: #95d0ff;
-	--refsl-color-white: #ffffff;
-	--refsl-color-gray-1: #ededf2;
-	--refsl-color-gray-2: #c8c8cd;
-	--refsl-color-gray-3: #a3a2ae;
-	--refsl-color-gray-4: #575761;
-	--refsl-color-gray-5: #383740;
-	--refsl-color-gray-6: #26262e;
-	--refsl-color-black: #18181c;
-
-	--refsl-color-accent-low: #b2ddff;
-	--refsl-color-accent: #005686;
-	--refsl-color-accent-high: #003556;
-	--refsl-color-white: #18181c;
-	--refsl-color-gray-1: #26262e;
-	--refsl-color-gray-2: #383740;
-	--refsl-color-gray-3: #575761;
-	--refsl-color-gray-4: #8b8a95;
-	--refsl-color-gray-5: #c1c1c7;
-	--refsl-color-gray-6: #ededf2;
-	--refsl-color-gray-7: #f6f6f8;
-	--refsl-color-black: #ffffff;
-
     /* Starlight Specific */
-
-
-
 
 	--sl-color-accent-low: var(--abyss);
 	--sl-color-accent: var(--nord15);
