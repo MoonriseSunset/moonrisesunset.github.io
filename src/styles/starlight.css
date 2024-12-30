@@ -40,13 +40,21 @@
 	--sl-color-white: var(--nord6);
 	--sl-color-gray-1: var(--nord13);
 	--sl-color-gray-2: var(--nord4);
-	--sl-color-gray-3: var(--nord7);
+	--sl-color-gray-3: var(--nord8);
 	--sl-color-gray-4: var(--nord14);
 	--sl-color-gray-5: var(--nord11);
 	--sl-color-gray-6: var(--nord0);
 	--sl-color-black: var(--ash);
 
 	--sl-font: 'Inter', sans-serif;
+
+	h2{
+		color: var(--nord8);
+	}
+
+	h3{
+		color: var(--nord10);
+	}
 
 	em{
 		color: var(--nord14);
@@ -59,6 +67,14 @@
 	strong{
 		color: var(--nord11);
 	}
+
+	figcaption{
+		text-decoration: overline;
+		color: var(--nord13);
+	}
+	#caption{
+		margin-top: 0.25rem;
+	}
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
@@ -67,13 +83,43 @@
 	--sl-color-accent-high: var(--nord10);
 	--sl-color-white: var(--nord1);
 	--sl-color-gray-1: var(--nord13);
-	--sl-color-gray-2: var(--nord0);
+	--sl-color-gray-2: var(--nord3);
 	--sl-color-gray-3: var(--abyss);
 	--sl-color-gray-4: var(--nord14);
 	--sl-color-gray-5: var(--burntorange);
 	--sl-color-gray-6: var(--nord6);
 	--sl-color-gray-7: var(--nord3);
 	--sl-color-black: white;
+
+	--sl-color-bg-nav: var(--nord0);
+
+	h2{
+		color: var(--nord8);
+	}
+
+	h3{
+		color: var(--nord10);
+	}
+
+	em{
+		color: var(--burntorange);
+
+		strong{
+			color: var(--nord15);
+		}
+	}
+
+	strong{
+		color: var(--nord3);
+	}
+
+	figcaption{
+		text-decoration: overline;
+		color: var(--nord11);
+	}
+	#caption{
+		margin-top: 0.25rem;
+	}
 }
 
 h1{

@@ -28,6 +28,7 @@ export default defineConfig({
 						{label: 'About',link: '/about/'},
 						{label: 'Projects',link: '/project-overview/'},
 						{label: 'Changelog',link: '/changelog/'},
+						{label: 'Thanks',link: '/thanks/'},
 					
 					],
 					collapsed: false,
