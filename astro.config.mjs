@@ -14,6 +14,7 @@ export default defineConfig({
 				'@fontsource-variable/inter',
 				'@fontsource-variable/sometype-mono',
 				'@fontsource-variable/noto-sans',
+				'@fontsource/atkinson-hyperlegible',
 			],
 			social: {
 				github: 'https://github.com/MoonriseSunset',

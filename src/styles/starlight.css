@@ -46,7 +46,8 @@
 	--sl-color-gray-6: var(--nord0);
 	--sl-color-black: var(--ash);
 
-	--sl-font: 'Inter', sans-serif;
+	--sl-font: 'Atkinson Hyperlegible', sans-serif;
+	/*font-family: */
 
 	h2{
 		color: var(--nord8);
@@ -126,6 +127,35 @@ h1{
 	font-family: 'Sometype Mono Variable', monospace;
 }
 
-h2{
+h2, h3, h4, h5, h6{
 	font-family: 'Noto Sans Variable', sans-serif;
+}
+
+p,li{
+	font-size:1.125rem
+}
+
+.sl-link-card,.tagline{
+	/*font-family: 'Atkinson Hyperlegible', sans-serif;*/
+	font-family: 'Inter', sans-serif;
+}
+
+#inter{
+	font-family: 'Inter', sans-serif;
+	font-size: 1.25rem;
+}
+
+#atkinson{
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-size: 1.25rem;
+}
+
+#sometype{
+	font-family: 'Sometype Mono Variable', monospace;
+	font-size: 1.25rem;
+}
+
+#noto{
+	font-family: 'Noto Sans Variable', sans-serif;
+	font-size: 1.25rem;
 }
