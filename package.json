@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gitRefresh": "git rm -r --cached . && git add ."
   },
   "dependencies": {
     "@astrojs/starlight": "^0.30.3",
