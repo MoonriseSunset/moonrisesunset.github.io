@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/this site/currentsite.mdx",
+                "file": "school-projects/freshman-engineering.mdx",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "currentsite"
+              "title": "freshman-engineering"
             }
           }
         ]
@@ -161,11 +161,16 @@
   },
   "active": "ad41125fa836faeb",
   "lastOpenFiles": [
-    "personal/niagara.mdx",
-    "personal/project-template.mdx",
-    "starlight-templates/swatch.mdx",
+    "personal/nixieclock.mdx",
+    "personal/flowr.mdx",
+    "personal/dollcode.mdx",
+    "personal/2-Small Projects.mdx",
+    "personal/1-PersonalProjects.mdx",
+    "school-projects/Robotics.mdx",
+    "thanks.mdx",
+    "project-overview.mdx",
     "index.mdx",
-    "personal/this site/currentsite.mdx",
-    "personal/3d printing/Machines.mdx"
+    "changelog.mdx",
+    "about.mdx"
   ]
 }
