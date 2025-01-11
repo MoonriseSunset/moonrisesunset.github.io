@@ -3,11 +3,18 @@ import { defineConfig } from 'astro/config';
 
 import starlight from '@astrojs/starlight';
 
+
+//Plugins
+import starlightImageZoom from 'starlight-image-zoom'
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://moonrisesunset.github.io',
   integrations: [	
     starlight({
+
+		plugins: [starlightImageZoom()],
+
       title: "Moonrise's Portfolio",
 			customCss:[
 				'./src/styles/starlight.css',
