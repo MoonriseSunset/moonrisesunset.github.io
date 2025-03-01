@@ -5,7 +5,6 @@ import starlight from '@astrojs/starlight';
 
 
 //Plugins
-import starlightImageZoom from 'starlight-image-zoom'
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,7 +12,7 @@ export default defineConfig({
   integrations: [	
     starlight({
 
-		plugins: [starlightImageZoom()],
+		plugins: [],
 
       title: "Moonrise's Portfolio",
 			customCss:[
