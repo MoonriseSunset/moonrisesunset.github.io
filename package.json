@@ -15,7 +15,7 @@
     "@fontsource-variable/noto-sans": "^5.1.1",
     "@fontsource-variable/sometype-mono": "^5.1.1",
     "@fontsource/atkinson-hyperlegible": "^5.1.1",
-    "astro": "^5.2.3",
+    "astro": "^5.4.1",
     "starlight-image-zoom": "^0.10.1"
   }
 }
