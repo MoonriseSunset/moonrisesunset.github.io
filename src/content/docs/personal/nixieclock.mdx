@@ -8,13 +8,29 @@ sidebar:
 ---
 import { Icon } from '@astrojs/starlight/components';
 
-I've been working on a nixie clock off and on over the years, here's the breakdown:
+
+The 2019 Bay Area Maker Faire was my first exposure to <a target="_base" href="https://makerfaire.com/maker/entry/69348/">nixie clocks</a>.
+After this point, I found the orange glow and unique way of displaying numbers to be interesting enough that I wanted to make one myself.
+
+This page serves as a breakdown of the past iteration in addition to being a place for me to document progress on the next iteration.
+
+---
 
 ## 1st Iteration:
 
-This is the current iteration until I get to designing the 2nd. The whole thing is assembled on a large protoboard, with major chips soldered in place. Connections were made through wire-wrapping (which would also make it somewhat fragile).
+### General Overview:
 
-### Parts Overview:
+This first iteration had no prior designing, other than reading over the respective part datasheets and generally laying out the whole circuit on a protoboard.
+All code in this iteration was done using Arduino IDE on an Arduino Nano Every microcontroller. 
+
+### Sub-modules:
+
+The way this first iteration worked revolved around the Arduino parsing an I2C signal from the DS3231 RTC, and converting it into a serial signal. This serial line was then converted into BCD using the SN74LV8153N.
+
+Finally, I used a combination of the CD4028BE (which controlled the transistors based on the BCD signal) and the MPSA42 transistors (for high voltage switching) to drive the nixie tubes using the BCD signal.
+
+
+### Part list:
 
 - **Primary Microcontroller**: <a target="_base" href="https://store-usa.arduino.cc/products/arduino-nano-every">Arduino Nano Every</a>
 - Arduino -> Serial Chips (3 total): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV8153N?qs=UG%2F8xqv%2F6WfEPwrU8la10g%3D%3D">SN74LV8153N</a>
@@ -29,6 +45,7 @@ This is the current iteration until I get to designing the 2nd. The whole thing 
 #### Objectives:
 
 - Get assembly made into a PCB
+- (as an addendum to the above), familiarize myself with KiCad
 - Condense design to use less components
 
 ### Parts Overview:
