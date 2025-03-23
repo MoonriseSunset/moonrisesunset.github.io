@@ -1,0 +1,23 @@
+---
+title: Home
+description: Start Here! Welcome to my site.
+template: 'splash'
+next: false
+prev: false
+hero:
+  title: "Welcome!"
+  tagline: "This is my portfolio :)"
+  image:
+    alt: "Logo"
+    dark: ../starlight-assets/SplashDark.png
+    light: ../starlight-assets/SplashLight.png
+---
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+---
+
+<CardGrid>
+  <LinkCard title="About Me" href="/about/" description="a small intro to me and my site"/>
+  <LinkCard title="Projects" href="/project-overview/" description="All of the fun stuff"/>
+  <LinkCard title="Changelog" href="/changelog/" description=""/> 
+</CardGrid>

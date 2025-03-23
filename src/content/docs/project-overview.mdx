@@ -1,0 +1,24 @@
+---
+title: Home
+description: Project Guide
+tableOfContents: false
+---
+import { Badge, Tabs, TabItem, LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+As I work on entries here I assign a badge based a badge system to indicate the "readiness" of different pages:
+
+<Tabs>
+    <TabItem label="Ongoing"><Badge text="Ongoing" variant="tip" />Similar to the Complete tags, these entries are generally complete descriptions, just for an ongoing project.</TabItem>
+    <TabItem label="Beta"><Badge text="Beta" variant="success" />Entries with a Beta tag are generally WIP, with some content filled out.</TabItem>
+    <TabItem label="Alpha"><Badge text="Alpha" variant="caution" />Entries with this tag are just bare bones, one step above no content at all.</TabItem>
+    <TabItem label="Empty"><Badge text="Empty" variant="danger" />Empty pages which will be worked on later on.</TabItem>
+</Tabs>
+
+If an entry doesn't have a label, then it is more or less complete.
+
+---
+
+<CardGrid>
+  <LinkCard title="Personal Projects" href="/personal/1-personalprojects/" description="jump to the personal project section"/>
+  <LinkCard title="School Projects" href="/school-projects/1-schoolprojects/" description="jump to the school project section"/>
+</CardGrid>
