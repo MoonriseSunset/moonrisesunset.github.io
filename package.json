@@ -15,6 +15,6 @@
     "@fontsource-variable/noto-sans": "^5.2.6",
     "@fontsource-variable/sometype-mono": "^5.2.5",
     "@fontsource/atkinson-hyperlegible": "^5.2.5",
-    "astro": "^5.5.4"
+    "astro": "^5.6.1"
   }
 }
