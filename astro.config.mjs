@@ -3,7 +3,6 @@ import { defineConfig } from 'astro/config';
 
 import starlight from '@astrojs/starlight';
 
-
 //Plugins
 
 // https://astro.build/config
@@ -15,6 +14,9 @@ export default defineConfig({
 		plugins: [],
 
       title: "Moonrise's Portfolio",
+	  components:{
+		  Footer: './src/components/Footer.astro',
+	  },
 			customCss:[
 				'./src/styles/starlight.css',
 				'@fontsource-variable/inter',
@@ -22,12 +24,16 @@ export default defineConfig({
 				'@fontsource-variable/noto-sans',
 				'@fontsource/atkinson-hyperlegible',
 			],
+
 			social: {
 				github: 'https://github.com/MoonriseSunset',
 			},
+
 			favicon: './assets/starlightfavicon.png',
       		logo: {src:'./src/assets/Logo.png',},
 			sidebar: [
+			
+				//Top Section
 				{
 					label: 'Start Here',
 					items:[
@@ -40,17 +46,23 @@ export default defineConfig({
 					],
 					collapsed: false,
 				},
-        {
+
+				//Personal Project Section
+        		{
 					label: 'Personal Projects',
 					autogenerate: {directory: '/personal'},
 					collapsed: false,
 				},
+
+				//School Project Section
 				{
 					label: 'School Projects',
 					autogenerate: {directory: '/school-projects'},
 					collapsed: false,
 				},
-			],
-		}),
-  ],
+			], //end sidebar config
+
+		}), //end starlight config
+
+  ], //end Integrations
 });
