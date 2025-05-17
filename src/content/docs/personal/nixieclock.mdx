@@ -23,6 +23,16 @@ This page serves as a breakdown of the past iteration in addition to being a pla
 This first iteration had no prior designing, other than reading over the respective part datasheets and generally laying out the whole circuit on a protoboard.
 All code in this iteration was done using Arduino IDE on an Arduino Nano Every microcontroller. 
 
+<figure>
+    ![BlockDiagram1](../../../assets/Nixie-Clock/OldBlock1.png)
+    <figcaption id="caption">First part of block diagram</figcaption>
+</figure>
+
+<figure>
+    ![BlockDiagram2](../../../assets/Nixie-Clock/OldBlock2.png)
+    <figcaption id="caption">Second part of block diagram</figcaption>
+</figure>
+
 ### Sub-modules:
 
 The way this first iteration worked revolved around the Arduino parsing an I2C signal from the DS3231 RTC, and converting it into a serial signal. This serial line was then converted into BCD using the SN74LV8153N.
@@ -33,23 +43,31 @@ Finally, I used a combination of the CD4028BE (which controlled the transistors 
 ### Part list:
 
 - **Primary Microcontroller**: <a target="_base" href="https://store-usa.arduino.cc/products/arduino-nano-every">Arduino Nano Every</a>
-- Arduino -> Serial Chips (3 total): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV8153N?qs=UG%2F8xqv%2F6WfEPwrU8la10g%3D%3D">SN74LV8153N</a>
-- Serial -> BCD Chips (1 per tube): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/CD4028BE?qs=q81XD9WTF%252BJVO5EmC%252BxsYA%3D%3D">CD4028BE</a>
+- Arduino -> Parallel Chips (3 total): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV8153N?qs=UG%2F8xqv%2F6WfEPwrU8la10g%3D%3D">SN74LV8153N</a>
+- Parallel -> BCD Chips (1 per tube): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/CD4028BE?qs=q81XD9WTF%252BJVO5EmC%252BxsYA%3D%3D">CD4028BE</a>
 - BCD -> Nixie High-Power Transistors (1 per nixie pin): <a target="_base" href="https://www.mouser.com/ProductDetail/Diotec-Semiconductor/MPSA42?qs=OlC7AqGiEDnrqj4YbvE3lA%3D%3D">MPSA42</a>
 - External RTC Module: <a target="_base" href="https://docs.macetech.com/doku.php/chronodot_v2.0">ChronoDot</a>
+- Nixie Tubes: <a target="_base" href="https://www.ebay.com/sch/i.html?_nkw=ИН-16+tube">ИН-16</a>
 
 ---
 
-## 2nd Iteration (Planned):
+## 2nd Iteration (In-Progress):
 
 #### Objectives:
 
 - Get assembly made into a PCB
-- (as an addendum to the above), familiarize myself with KiCad
+- (as an addendum to the above), familiarize myself with KiCad and/or Altium Designer
 - Condense design to use less components
+
+<figure>
+    ![NewBlockDiagram](../../../assets/Nixie-Clock/NewBlock.png)
+    <figcaption id="caption">Prototype Block Diagram</figcaption>
+</figure>
 
 ### Parts Overview:
 
 - **Primary Microcontroller**: <a target="_base" href="https://docs.particle.io/reference/datasheets/wi-fi/photon-datasheet/">Particle Photon (not photon 2)</a>
-- MCU -> Serial Chips (3 total): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV8153N?qs=UG%2F8xqv%2F6WfEPwrU8la10g%3D%3D">SN74LV8153N</a>
-- Serial -> **Nixie** (1 per tube): <a target="_base" href="https://neon1.net/nixieclock/sn74141.pdf">Soviet 74141</a>
+- MCU -> Parallel Chips (3 total): <a target="_base" href="https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LV8153N?qs=UG%2F8xqv%2F6WfEPwrU8la10g%3D%3D">SN74LV8153N</a>
+- Optoisolators (not currently being used): <a target="_base" href="https://www.mouser.com/c/optoelectronics/optocouplers-photocouplers/transistor-output-optocouplers/?q=ACPL-844&package%20%2F%20case=PDIP-16 ">ACPL-844 Series PDIP-16 Optocoupler</a>
+- Parallel -> **Nixie** (1 per tube): <a target="_base" href="https://neon1.net/nixieclock/sn74141.pdf">Soviet 74141</a>
+- Nixie Tubes: <a target="_base" href="https://www.ebay.com/sch/i.html?_nkw=ИН-16+tube">ИН-16</a>
