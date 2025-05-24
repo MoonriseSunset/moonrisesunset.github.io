@@ -137,7 +137,7 @@ p,li{
 	font-size:1.125rem
 }
 
-.sl-link-card,.tagline{
+.tagline, .sl-card-grid{
 	/*font-family: 'Atkinson Hyperlegible', sans-serif;*/
 	font-family: 'Inter', sans-serif;
 }
