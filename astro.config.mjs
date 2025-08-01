@@ -22,7 +22,6 @@ export default defineConfig({
 				'@fontsource-variable/inter',
 				'@fontsource-variable/sometype-mono',
 				'@fontsource-variable/noto-sans',
-				'@fontsource/atkinson-hyperlegible',
 				'@fontsource-variable/atkinson-hyperlegible-next',
 			],
 
