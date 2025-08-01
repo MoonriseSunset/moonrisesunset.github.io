@@ -48,7 +48,7 @@
 
 	--sl-color-hairline:var(--nord7);
 
-	--sl-font: 'Atkinson Hyperlegible', sans-serif;
+	--sl-font: 'Atkinson Hyperlegible Next Variable', sans-serif;
 	/*font-family: */
 
 	h2{
@@ -148,7 +148,7 @@ p,li{
 }
 
 #atkinson{
-	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-family: 'Atkinson Hyperlegible Next Variable', sans-serif;
 	font-size: 1.25rem;
 }
 
