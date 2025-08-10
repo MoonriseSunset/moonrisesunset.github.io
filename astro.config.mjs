@@ -25,9 +25,9 @@ export default defineConfig({
 				'@fontsource-variable/atkinson-hyperlegible-next',
 			],
 
-			social: {
-				github: 'https://github.com/MoonriseSunset',
-			},
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/MoonriseSunset' },
+			],
 
 			favicon: './assets/starlightfavicon.png',
       		logo: {src:'./src/assets/Logo.png',},
