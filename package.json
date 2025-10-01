@@ -16,6 +16,6 @@
     "@fontsource-variable/inter": "^5.2.5",
     "@fontsource-variable/noto-sans": "^5.2.6",
     "@fontsource-variable/sometype-mono": "^5.2.5",
-    "astro": "^5.12.9"
+    "astro": "^5.13.7"
   }
 }
