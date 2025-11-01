@@ -11,11 +11,11 @@
     "update": "npm update && npx @astrojs/upgrade && npm prune && cd ../home && npm update && npx @astrojs/upgrade && npm prune && cd ../nox && npm update && npx @astrojs/upgrade && npm prune && cd ../main-site"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.36.1",
+    "@astrojs/starlight": "^0.36.2",
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.2.4",
     "@fontsource-variable/inter": "^5.2.5",
     "@fontsource-variable/noto-sans": "^5.2.6",
     "@fontsource-variable/sometype-mono": "^5.2.5",
-    "astro": "^5.15.2"
+    "astro": "^5.15.3"
   }
 }
