@@ -1,0 +1,76 @@
+---
+title: Python
+description: Python reference manual
+---
+import { Aside } from '@astrojs/starlight/components';
+
+# Imports:
+
+Are the same regardless of if they're a python file in the same directory or are from pip.
+
+```python
+#from Conversions, which would be in the same directory
+import Conversions as conv
+
+#or as a default library
+import random as rand
+
+#or as a PIP imported library
+import tensorflow as tf
+```
+
+# Variables:
+
+Case-sensitive, and type can be changed
+
+---
+### Main Types:
+
+Just the general types of variables.
+
+#### Integer (int):
+Whole number, that's it
+```python
+number = 1 
+```
+
+#### Float (float):
+Number, now with decimals
+```python
+pi = 3.14
+fraction = 0.3333
+```
+
+#### Strings/chars (str):
+Chars are single letters
+```python
+Letter = 'A'
+```
+
+<Aside>Chars aren't technically their own data type in python, but they have a method for converting to/between unicode. </Aside>
+
+Strings, literally multiple characters, and/or spaces
+```python
+Sentence = 'The time is: '
+```
+
+---
+### Array Types:
+
+|    Type    | Mutable | Add/Remove Items |
+| :--------: | ------- | ---------------- |
+|    List    | yes     | yes              |
+|   Tuple    | no      | no               |
+|    Set     | no      | yes              |
+| Dictionary | yes     | yes              |
+
+#### Lists:
+Mutable, declared w/ square brackets
+
+```python
+shoppinglist = ['apple','orange','grape',20]
+```
+
+# Further Links:
+
+- [W3Schools Reference](https://www.w3schools.com/python/default.asp)

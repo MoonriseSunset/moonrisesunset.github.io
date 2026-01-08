@@ -1,0 +1,184 @@
+---
+title: Dart
+description: Dart reference manual
+---
+import { Aside } from '@astrojs/starlight/components';
+
+In Dart, code is run in a main function, so the general structure of a dart file is:
+
+```dart
+//Imports and other stuff out here
+
+void main(){
+	//Main Code goes here
+
+}
+```
+
+# Dart CLI Shortcuts:
+
+<Aside title="Path"> Make sure to cd into the correct path before using the commands.</Aside>
+
+```
+dart create -t console-simple AppNameHere
+```
+
+creates a simple project within the named project folder.
+
+---
+
+```
+dart run
+```
+
+To run the file.
+
+---
+
+```
+dart fix --apply
+```
+
+To attempt to fix issues in the code (e.g. variables not being constants/finals)
+
+---
+
+```
+dart format FileNameHere.dart
+```
+
+Condenses/reformats dart code.
+
+---
+
+```
+dart compile exe|js FileNameHere.dart
+```
+
+Compiles to aforementioned file type (there are more but these are the ones I'll probably use).
+
+# Imports:
+
+## Importing a separate file:
+
+Use file name (with *.dart* suffix and subpath if applicable*) in a string
+
+```dart
+import 'some_file.dart';
+
+import 'lib/library.dart';
+```
+
+## Importing a default library:
+
+Use *dart:* prefix and then the package/library.
+
+```dart
+import 'dart:math';
+```
+
+## Importing a <a target="_blank" href="https://pub.dev">pub package (dart library)</a>
+
+Follow instructions in the *Installing* tab of the library.
+
+# Comments and Print:
+
+## Comments:
+
+Similar to C++:
+```dart
+// single line comment
+
+/*
+Multi-line comment
+*/
+
+```
+
+## Print Statements:
+
+```dart
+print('Hello, World!');
+```
+
+To print variables, include a *$* before the variable, or *${}* for longer snippets of code:
+```dart
+String name = 'John';
+
+print('Hi my name is $name.');
+print('Math: ${1 + 10}');
+
+```
+
+# Control Flow:
+
+## Conditionals:
+```dart
+
+String color = 'blue';
+
+if (color == 'red'){
+	//
+} else if (color == 'green'){
+	//
+} else{
+	print('Color is blue!');
+}
+
+//Switch/Case statements: 
+switch (color){
+	case 'red':
+		//
+	case 'green':
+		//
+	case 'blue':
+		//
+	default:
+		print('what the heck is this color?');
+
+}
+
+//Single line if statement:
+if (color == 'green') print('This is green!');
+
+//Assertion, stops code if the boolean is false, good for dev:
+assert(color == 'blue');
+
+```
+
+## Loops:
+```dart
+//for loop:
+for (var i = 0; i < 10; i++){
+	print(i);
+}
+
+//while loop:
+int j = 0;
+int answer = 0;
+while (j < 20){
+	answer = 10 - j;
+	print(answer);
+
+	//Break/continue
+	if(answer == 0){
+		//continue;
+		break;
+	}
+}
+
+//do/while loop:
+int k = 0;
+do{
+	print(k);
+} while(k<100);
+
+```
+
+# Further Reference:
+
+[Fireship](https://fireship.io/courses/dart/)
+
+[General Reference/Intro to Dart](https://dart.dev/language)
+
+[Dart Detailed Reference](https://dart.dev/libraries)

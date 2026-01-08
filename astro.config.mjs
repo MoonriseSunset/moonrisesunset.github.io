@@ -50,7 +50,14 @@ export default defineConfig({
 				//Personal Project Section
         		{
 					label: 'Personal Projects',
-					autogenerate: {directory: '/personal'},
+					autogenerate: {directory: '/personal-projects'},
+					collapsed: false,
+				},
+
+				//Reference Manual Section
+				{
+					label: 'Reference Manuals',
+					autogenerate: {directory: '/manuals'},
 					collapsed: false,
 				},
 
