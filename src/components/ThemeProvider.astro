@@ -1,0 +1,9 @@
+---
+// Override to force dark mode always
+---
+<script is:inline>
+	window.StarlightThemeProvider = (() => {
+		document.documentElement.dataset.theme = 'dark';
+		return { updatePickers() {} };
+	})();
+</script>

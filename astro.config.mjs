@@ -16,6 +16,8 @@ export default defineConfig({
       title: "Moonrise's Portfolio",
 	  components:{
 		  Footer: './src/components/Footer.astro',
+		  ThemeSelect: './src/components/ThemeSelect.astro',
+		  ThemeProvider: './src/components/ThemeProvider.astro',
 	  },
 			customCss:[
 				'./src/styles/starlight.css',
